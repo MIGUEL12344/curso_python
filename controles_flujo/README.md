@@ -11,3 +11,6 @@ if True:
     print("es verdad")
 ```
 ## ciclos
+son controles de flujo que repiten codigo
+### el bucle for
+en el bucle for sabes donde va a terminar tu codigo
