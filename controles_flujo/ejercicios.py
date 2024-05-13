@@ -26,5 +26,6 @@ numero = int(input("Por favor, ingresa un número entero positivo: "))
 if numero > 0:
     print(*range(numero, -1, -1), sep=", ")
 else:
-    print("El número ingresado no es válido.")
+    print("El número ingresado no es válido")
+    
 
