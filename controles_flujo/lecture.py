@@ -39,9 +39,25 @@ for i,j in enumerate("aeiou"):
     print(f"el idice es {i} la vocal es {j}")
 
 #otro ejercicio
-pida=input("ingrese dos o mas oraciones separados por comas-> ")
-contador=0
-for i,indice in range(0,len(pida)):
-    if pida[i] == ",":
+datos:str=input("ingrese dos o mas oraciones separados por comas-> ")
+contador:int=0
+for indice,letra in enumerate(datos):
+    if letra == ",":
+        print(f"""el numero de indices son:: {i}""")
         contador+=1
-print(f"la cantidad de comas es {contador}")
+print(f"""la cantidad de comas es:: {contador}""")
+#otro ejercicio
+edad_usuario:int=int(input("ingrese su edad: "))
+for edad in range(1,edad_usuario+1):
+    print(edad)
+#otro ejercicio
+ultima_letra=""
+for i in range(3):
+    nombre:str=input("ingrese su nombre-> ")
+    letras:str=nombre[-1]
+    ultima_letra+=letras
+print(ultima_letra)
+
+#otro ejercicio
+for i,letra in enumerate("aeiou"):
+    print(letra * (i + 1))

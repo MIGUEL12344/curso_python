@@ -14,3 +14,9 @@ if True:
 son controles de flujo que repiten codigo
 ### el bucle for
 en el bucle for sabes donde va a terminar tu codigo
+### in (mejor para medianos)
+consume menos memoria en cantidades grande de cadena y es mas rapido
+### enumerate (mejor para medianas y grandes)
+consume mas memoria en grandes cantidades de cadena pero es rapido
+### range y len (mejor para chquitos)
+consume mas memoria en cadenas grandes 
