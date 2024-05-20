@@ -20,3 +20,11 @@ consume menos memoria en cantidades grande de cadena y es mas rapido
 consume mas memoria en grandes cantidades de cadena pero es rapido
 ### range y len (mejor para chquitos)
 consume mas memoria en cadenas grandes 
+
+### while
+es un mecanismo que usa `python` para repetir instrucciones, la semantia de esta sentencia es: `mientras se cumpla la condicion has algo`
+```python
+while True:
+    print("hola")
+```
+while se utiliza cuando nuestro bucle nececite la intervencion de un tercero

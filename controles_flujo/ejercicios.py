@@ -27,5 +27,34 @@ if numero > 0:
     print(*range(numero, -1, -1), sep=", ")
 else:
     print("El número ingresado no es válido")
+
+#tabla de multiplicar
+for i in range(1,6):
+    print(f"""\nla tabla del {i}\n""")
+    for m in range(1,13):
+        print(f"""{i}x{m}={i*m}""")
     
+#tabla especifica
+numero=int(input("ingrese numero de tabla->  "))
+for i in range(numero,numero+1):
+    print(f"""\n \tla tabla del {i}\n""")
+    for m in range(1,13):
+        print(f"""{i}x{m}={i*m}""")
+#ejercicio while
+condicion=True
+while condicion:
+    eval=input("desea continuar [s7n]:")
+    if eval == "s":
+        print("continuas en el bucle")
+        continue
+    else:
+        print("se termino el programa")
+        condicion=False
+        break
+#otro ejemplo de while
+num=int(input("ingrese numero-> "))
+cont=0
+while cont < num :
+    print("hola")
+    cont+=1
 

@@ -61,3 +61,23 @@ print(ultima_letra)
 #otro ejercicio
 for i,letra in enumerate("aeiou"):
     print(letra * (i + 1))
+
+#while 
+#metodos de string
+nombre="hola"
+nombre.upper()#todo mayuscula
+nombre="hola"
+nombre.lower()#todo minuscula
+nombre="hola"
+nombre.capitalize()#primera letra mayuscula
+
+#ejercicio while
+notas=int(input("ingrese la cantidad de notas-> "))
+cant=0
+promedio_final=0
+while cant < notas:
+    print(f"ingrese nota {cant+1}")
+    promedio=int(input(""))
+    promedio_final+=promedio
+    cant+=1
+print(f"el promedio es {promedio_final//cant}")
