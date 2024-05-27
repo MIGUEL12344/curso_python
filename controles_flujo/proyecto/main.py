@@ -61,7 +61,6 @@ while True:
                     print(f"Pago de ${costo} realizado por la reserva del horario {horario}.")
                 else:
                     print("Monto de pago incorrecto.")
-
     elif opcion == 4:
         # Verificar alquileres
         if not reservas:
