@@ -83,3 +83,31 @@ print(lista[indice])
 
 pertenencia="gert" in lista 
 ```
+### 5. COMPARACION DE LISTAS
+podemos hacer uso de los operadores de comparacion para comprar listas 
+**Ejm:**
+```python
+compara=[1,2,3]>[1,2,4]
+print(compara)
+# salida:
+
+```
+## 6. cuidado con las copias
+
+### 7. fe de erratas(actualizar listas)
+```python
+lista=[1,3,4,5,6]
+lista[0]=2
+print(lista)
+alumnos=[
+    {"nombre":"abel"
+    "edad":15
+    },
+    {"nombre":"anthoni"
+    "edad":29}
+]
+alumnos[0]["edad"]=10
+alumnos[0]={"nombre":"mafer","edad":15}
+alumnos[1]["sexo"]="por definir"
+print(alumnos)
+```
