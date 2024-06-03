@@ -111,3 +111,4 @@ alumnos[0]={"nombre":"mafer","edad":15}
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
 ```
+### los metodos son herramientas son herramientas que sirven para manipular tipos de datos estructurados y tips de datos string

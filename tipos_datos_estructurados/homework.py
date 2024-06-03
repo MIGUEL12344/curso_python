@@ -65,3 +65,71 @@ def copia_datos_mascota():
 print(dato_mascota)
 print()
 copia_datos_mascota()
+#un empresario de alquiler de autos desea guardar en una base 
+#de datos la informacion de sus veiculos,procesos que desea automatizar con sus sistema informatico
+#las acciones que puede realizar el empresario son ver las listas de autos que tiene, podra tambien 
+#actualizar la lista y agregar un nuevo veiculo
+###
+#casos de uso
+
+###1
+#yo como empresario
+#quiero ver la lista de autos disponibles en mi inventario
+#para ver el estado actual de mi stock
+
+###2
+#yo como empresario 
+#quiero agregar un nuevo veiculo a la lista de autos
+#para ampliar mi inventario y ofrecer mas opciones a mis clientes
+
+###3
+#yo como empresario
+#quiero actualizar la informacion de un veiculo existente en mi liata 
+#para asegurarme que los datos esten correctos y actualizados.
+
+#programacion
+##ver las lista de los autos
+autos =[
+    {'1.marca': 'Toyota', 'modelo': 'Corolla', 'año': 2020, 'matricula': 'XYZ123'},
+    {'2.marca': 'Honda', 'modelo': 'Civic', 'año': 2019, 'matricula': 'ABC456'}]
+def mostrar_autos():
+    for ordenado in autos:
+             print(ordenado)
+while True:
+    print("\nOpciones:")
+    print("1. Ver lista de autos")
+    print("2. Agregar un nuevo vehículo")
+    print("3. Actualizar información de un vehículo")
+    print("4. Salir")
+    opcion=int(input("ingrese una opcion"))
+    if opcion == 1:
+         mostrar_autos()
+#agregar nuevo dato a lista
+    if opcion == 2:
+        marca = input("Ingrese la marca del auto: ")
+        modelo = input("Ingrese el modelo del auto: ")
+        año = int(input("Ingrese el año del auto: "))
+        matricula = input("Ingrese la matrícula del auto: ")
+        nuevo_auto = {'marca': marca, 'modelo': modelo, 'año': año, 'matricula': matricula}
+        autos.append(nuevo_auto)
+        print("\nAuto agregado exitosamente.")
+#actualizar lista de autos
+    if opcion == 3:
+             mostrar_autos()
+             opcion=int(input("\nIngrese el número del auto que desea actualizar\n"))
+             if opcion == 1:
+                 marca = input("Ingrese la nueva marca del auto->> ")
+                 modelo = input("Ingrese el nuevo modelo del auto->> ")
+                 año = input("Ingrese el nuevo año del auto->> ")
+                 matricula = input("Ingrese la nueva matrícula del auto->> ")
+                 if marca:
+                     autos[0]['1.marca'] = marca
+                 if modelo:
+                     autos[0]['modelo'] = modelo
+                 if año:
+                     autos[0]['año'] = int(año)
+                 if matricula:
+                     autos[0]['matricula'] = matricula
+    if opcion == 4:
+         print("saliendo....")
+         break
