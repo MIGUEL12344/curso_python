@@ -45,3 +45,22 @@ copia_lista=lista.copy()
 copia_lista.sort()
 print(lista,end="\n ordenada \n")
 print(copia_lista)
+
+#crear una lista de numeros enteros del siguiente texto
+
+#listas por comprencion
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if int(n)%2==0]
+print(nueva_lista)
+
+#diccionarios por conprencion
+
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario_a={}
+for _,v in enumerate(lista_amigos):
+    diccionario_a[v]=len(v)
+print(diccionario_a)
+
+#aplicando vlc
+dicci={amigo:len(amigo) for amigo in lista_amigos}
+print(dicci)

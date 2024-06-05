@@ -112,3 +112,23 @@ alumnos[1]["sexo"]="por definir"
 print(alumnos)
 ```
 ### los metodos son herramientas son herramientas que sirven para manipular tipos de datos estructurados y tips de datos string
+## 8. listas y diccionarios por comprencion
+es una tecnica pythonica que nos permite crear listas y dicccionarios en una listas y diccionarios en una sola linea combinando.
+bucles y deciciones.
+>[!NOTE]
+>**VLC** value loop condicion - valor, bucle, condicion
+```python
+#listas por comprencion
+texto="1,4,8,9,6"
+nueva_lista=[int(n) for n in texto.split(",") if int(n)%2==0]
+print(nueva_lista)
+#diccionarios por conprencion sin vlc
+lista_amigos=["abel","anthony","edith","ruth"]
+diccionario_a={}
+for _,v in enumerate(lista_amigos):
+    diccionario_a[v]=len(v)
+print(diccionario_a)
+#aplicando el vlc
+dicci={amigo:len(amigo) for amigo in lista_amigos}
+print(dicci)
+```

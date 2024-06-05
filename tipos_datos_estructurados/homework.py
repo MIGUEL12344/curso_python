@@ -116,8 +116,8 @@ while True:
 #actualizar lista de autos
     if opcion == 3:
              mostrar_autos()
-             opcion=int(input("\nIngrese el número del auto que desea actualizar\n"))
-             if opcion == 1:
+             opciones=int(input("\nIngrese el número del auto que desea actualizar\n"))
+             if opciones == 1:
                  marca = input("Ingrese la nueva marca del auto->> ")
                  modelo = input("Ingrese el nuevo modelo del auto->> ")
                  año = input("Ingrese el nuevo año del auto->> ")
@@ -130,6 +130,19 @@ while True:
                      autos[0]['año'] = int(año)
                  if matricula:
                      autos[0]['matricula'] = matricula
+             if opciones == 2:
+                 marca = input("Ingrese la nueva marca del auto->> ")
+                 modelo = input("Ingrese el nuevo modelo del auto->> ")
+                 año = input("Ingrese el nuevo año del auto->> ")
+                 matricula = input("Ingrese la nueva matrícula del auto->> ")
+                 if marca:
+                     autos[1]['2.marca'] = marca
+                 if modelo:
+                     autos[1]['modelo'] = modelo
+                 if año:
+                     autos[1]['año'] = int(año)
+                 if matricula:
+                     autos[1]['matricula'] = matricula
     if opcion == 4:
          print("saliendo....")
          break
