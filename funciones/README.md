@@ -116,4 +116,129 @@ alumnos("antony","cruzes","desaprobado")
 
 
 ### desenpaquetado/empaquetado de argumentos(tarea)
+### Empaquetado de Argumentos
+
+#### *args
+- Se utiliza para empaquetar una cantidad variable de argumentos posicionales en una tupla.
+  
+python
+def ejemplo_args(*args):
+    print(args)
+
+ejemplo_args(1, 2, 3, 'a', 'b')  # Salida: (1, 2, 3, 'a', 'b')
+
+
+#### **kwargs
+- Se utiliza para empaquetar una cantidad variable de argumentos con nombre en un diccionario.
+  
+python
+def ejemplo_kwargs(**kwargs):
+    print(kwargs)
+
+ejemplo_kwargs(a=1, b=2, c=3)  # Salida: {'a': 1, 'b': 2, 'c': 3}
+
+
+### Desempaquetado de Argumentos
+
+#### Desempaquetado de Tuplas/Listas con *
+- Permite pasar una secuencia de argumentos a una función como si fueran argumentos posicionales separados.
+
+python
+def suma(a, b, c):
+    return a + b + c
+
+valores = (1, 2, 3)
+print(suma(*valores))  # Salida: 6
+
+
+#### Desempaquetado de Diccionarios con **
+- Permite pasar un diccionario a una función como si fueran argumentos con nombre separados.
+
+python
+def mostrar_info(nombre, edad, ciudad):
+    print(f"Nombre: {nombre}, Edad: {edad}, Ciudad: {ciudad}")
+
+info = {'nombre': 'Juan', 'edad': 25, 'ciudad': 'Madrid'}
+mostrar_info(**info)  # Salida: Nombre: Juan, Edad: 25, Ciudad: Madrid
+
+
+### Ejemplos Combinados
+
+#### Empaquetado y Desempaquetado Simultáneo
+- Puedes combinar *args y **kwargs en la misma función.
+
+```python
+def combinacion(*args, **kwargs):
+    print("args:", args)
+    print("kwargs:", kwargs)
+
+combinacion(1, 2, 3, a=4, b=5, c=6)
+# Salida:
+# args: (1, 2, 3)
+# kwargs: {'a': 4, 'b': 5, 'c': 6}
+
+```
+#### Usar * para Desempaquetar en Llamadas a Funciones
+- Puedes usar el operador * para desempaquetar una lista dentro de una función.
+
+```python
+def funcion(a, b, c):
+    print(a, b, c)
+
+lista = [1, 2, 3]
+funcion(*lista)  # Salida: 1 2 3
+
+
+#### Usar ** para Desempaquetar en Llamadas a Funciones
+- Puedes usar el operador ** para desempaquetar un diccionario dentro de una función.
+```
+```python
+def funcion(a, b, c):
+    print(a, b, c)
+
+diccionario = {'a': 1, 'b': 2, 'c': 3}
+funcion(**diccionario)  # Salida: 1 2 3
+```
  ## funciones internas de python (tarea)
+
+ En Python, existen muchas funciones internas (también conocidas como funciones incorporadas o built-in) que están disponibles automáticamente sin necesidad de importarlas desde un módulo. Estas funciones realizan una variedad de tareas, desde operaciones matemáticas básicas hasta la manipulación de estructuras de datos. Aquí te presento algunas de las funciones internas más comunes y útiles en Python:
+
+1. *Funciones Matemáticas y Numéricas:*
+   - abs(x): Devuelve el valor absoluto de un número.
+   - round(x, n): Redondea un número x a n decimales.
+   - max(iterable, *[, key, default]): Devuelve el valor máximo de un iterable.
+   - min(iterable, *[, key, default]): Devuelve el valor mínimo de un iterable.
+   - sum(iterable, /, start=0): Suma los elementos de un iterable.
+
+2. *Funciones de Conversión:*
+   - int(x, base=10): Convierte un valor a un entero.
+   - float(x): Convierte un valor a un número de punto flotante.
+   - str(object): Convierte un objeto a una cadena de caracteres.
+   - list(iterable): Convierte un iterable a una lista.
+   - tuple(iterable): Convierte un iterable a una tupla.
+   - dict(): Crea un diccionario.
+
+3. *Funciones de Secuencia y Estructuras de Datos:*
+   - len(s): Devuelve la longitud (el número de elementos) de un objeto.
+   - sorted(iterable, *, key=None, reverse=False): Devuelve una lista ordenada de los elementos en un iterable.
+   - reversed(seq): Devuelve un iterador que invierte el orden de una secuencia.
+   - enumerate(iterable, start=0): Devuelve un objeto enumerado.
+   - zip(*iterables): Une varios iterables.
+
+4. *Funciones de Entrada/Salida:*
+   - print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False): Imprime objetos a la salida estándar.
+   - input(prompt): Permite al usuario ingresar datos desde la entrada estándar.
+
+5. *Funciones de Manipulación de Archivos:*
+   - open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None): Abre un archivo y devuelve un objeto de archivo.
+
+6. *Funciones de Evaluación y Ejecución:*
+   - eval(expression, globals=None, locals=None): Evalúa una expresión.
+   - exec(object, globals=None, locals=None): Ejecuta un objeto de código.
+
+7. *Funciones de Comprobación y Atributos:*
+   - type(object): Devuelve el tipo del objeto.
+   - isinstance(object, classinfo): Comprueba si un objeto es una instancia de una clase o de una tupla de clases.
+   - hasattr(object, name): Comprueba si un objeto tiene un atributo con el nombre especificado.
+   - getattr(object, name[, default]): Devuelve el valor de un atributo de un objeto.
+   - setattr(object, name, value): Establece un atributo de un objeto.
