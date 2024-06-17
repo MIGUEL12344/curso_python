@@ -242,3 +242,9 @@ funcion(**diccionario)  # Salida: 1 2 3
    - hasattr(object, name): Comprueba si un objeto tiene un atributo con el nombre especificado.
    - getattr(object, name[, default]): Devuelve el valor de un atributo de un objeto.
    - setattr(object, name, value): Establece un atributo de un objeto.
+## tipos de funciones
+### funcioesw anonimas (funciones lambda)
+### funciones closure
+### funciones callback
+
+### programacion funcional

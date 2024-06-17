@@ -25,7 +25,7 @@ def Min(l):
             minimo=n
     return minimo
 print(Min(lista))
-#crear una funci9on que reciba como parametro un nombre y la edad de una persona mi funcion debera retornar un diccion con as datos, luego por terminal el valor de retorno de mi funcion.
+#crear una funcion que reciba como parametro un nombre y la edad de una persona mi funcion debera retornar un diccion con as datos, luego por terminal el valor de retorno de mi funcion.
 diccionario={}
 def datos(nombre,edad):
     return{
@@ -33,3 +33,7 @@ def datos(nombre,edad):
         "edad":edad
     }
 print(datos(nombre="jota",edad=13))
+#empaquetado y desempaquetado de objetos nominales
+def alumnos(**kwargs):
+    print(kwargs)
+alumnos(nombre="miguel", apellido="largo",edad=30)
