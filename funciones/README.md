@@ -248,3 +248,5 @@ funcion(**diccionario)  # Salida: 1 2 3
 ### funciones callback
 
 ### programacion funcional
+la prgramacion funcional no requiere que sepas como se desarrolla o ejecuta el proceso
+#### averiguar sobre map(),filter(),reduce()

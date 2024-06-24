@@ -37,3 +37,14 @@ print(datos(nombre="jota",edad=13))
 def alumnos(**kwargs):
     print(kwargs)
 alumnos(nombre="miguel", apellido="largo",edad=30)
+
+#ejemplo de lambda
+saludo=lambda n:f"hola, {n}"
+print(saludo("zz"))
+
+# crear un programa anonimo que reciba como parametro una lista de 5 numeros y retorne dos listas una con los numero pares y otra con numeros impares
+numeros=[2,4,8,3,1]
+pares=lambda pares:[i for i in numeros if i%2==0]
+impares=lambda impares:[i for i in numeros if i%2!=0]
+print(pares(numeros))
+print(impares(numeros))
