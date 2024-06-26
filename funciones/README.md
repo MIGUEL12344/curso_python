@@ -244,9 +244,35 @@ funcion(**diccionario)  # Salida: 1 2 3
    - setattr(object, name, value): Establece un atributo de un objeto.
 ## tipos de funciones
 ### funcioesw anonimas (funciones lambda)
-### funciones closure
-### funciones callback
+Las expresiones lambda se usan idealmente cuando necesitamos hacer algo simple y estamos más interesados en hacer el trabajo rápidamente en lugar de nombrar formalmente la función. Las expresiones lambda también se conocen como funciones anónimas.
 
+Las expresiones lambda en Python son una forma corta de declarar funciones pequeñas y anónimas (no es necesario proporcionar un nombre para las funciones lambda).
+
+Las funciones Lambda se comportan como funciones normales declaradas con la palabra clave def. Resultan útiles cuando se desea definir una función pequeña de forma concisa. Pueden contener solo una expresión, por lo que no son las más adecuadas para funciones con instrucciones de flujo de control.
+
+Sintaxis de una función Lambda
+lambda argumentos: expresión
+
+Las funciones Lambda pueden tener cualquier número de argumentos, pero solo una expresión.
+
+Código de ejemplo:
+
+- Función Lambda para calcular el cuadrado de un número
+square = lambda x: x ** 2
+print(square(3)) # Resultado: 9
+
+- Funcion tradicional para calcular el cuadrado de un numero
+def square1(num):
+  return num ** 2
+print(square(5)) # Resultado: 25
+### funciones closure
+Un closure es una función anidada que hace uso de variables de la función que la contiene y, a su vez, esta función superior o principal retorna la función anidada. Vamos a crear un closure que se encargue de agregar a un diccionario el nombre de una persona y algunos de sus datos personales, como la edad y la ciudad donde viven. Definimos la función superior que se va a llamar agregar_persona_directorio. Dentro de la función, tiene una variable de tipo diccionario y es ahí donde se van a guardar las personas que sean agregadas. Luego, creo la función anidada a la que voy a llamar agregar. Esta va a recibir tres parámetros: el nombre de la persona, la edad y la ciudad donde viven. Estos tres son los datos que requerimos para crear el directorio. Dentro de esta función anidada agrego los datos de cada persona al diccionario, que es la variable definida en el scope de la función superior. El nombre va a ser la llave del diccionario y cada valor será otro diccionario con las llaves…
+### funciones callback
+es una función ejecutable «A» que se usa como argumento de otra función «B». De esta forma, al llamar a «B», esta ejecutará «A». Esta acción puede ser inmediata, lo que se denominará retrollamada sincronizada o puede producirse en un punto posterior, lo que se denominaría retrollamada asíncrona. Los lenguajes de programación son compatibles con distintos tipos de retrollamadas, en ocasiones implementándolas con subrutinas, expresiones lambda o bloques de código.
+
+Esto permite desarrollar capas de abstracción de código genérico a bajo nivel que pueden ser llamadas desde una subrutina (o función) definida en una capa de mayor nivel. Por lo general, el código de alto nivel empieza con la llamada de alguna función, definida a bajo nivel, pasando a esta un puntero o un puntero inteligente de alguna otra función. Mientras la función de bajo nivel se ejecuta, esta puede ejecutar a su vez la función pasada como puntero para realizar alguna tarea. En otro escenario, las funciones de bajo nivel registran otras funciones pasadas como puntero inteligente, que luego pueden ser utilizadas para realizar retrollamadas asíncronas.
+
+Se puede utilizar una retrollamada como aproximación simple al polimorfismo y a la programación genérica, donde el comportamiento de una función puede ser determinado dinámicamente por el paso punteros o punteros inteligentes a funciones de bajo nivel en las que, aunque realicen tareas diferentes, los argumentos sean compatibles entre sí. A esta técnica se le conoce como reutilización de código.
 ### programacion funcional
 la prgramacion funcional no requiere que sepas como se desarrolla o ejecuta el proceso
 #### averiguar sobre map(),filter(),reduce()
