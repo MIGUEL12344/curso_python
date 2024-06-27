@@ -38,3 +38,23 @@ valores=4,5,6,7,8,2,1
 print(min(*valores))
 print(max(*valores))
 print(sum(*valores))
+
+#tarea
+# Crear una lista de alumnos
+alumnos = [
+    {"nombre": "Juan", "apellido": "Pérez", "edad": 20, "celular": "1234567890", "email": "juan.perez@example.com"},
+    {"nombre": "Ana", "apellido": "Gómez", "edad": 22, "celular": "0987654321", "email": "ana.gomez@example.com"},
+    {"nombre": "Luis", "apellido": "Martínez", "edad": 24, "celular": "1122334455", "email": "luis.martinez@example.com"}
+]
+
+# Actualizar los registros con el campo "programa de estudios"
+for alumno in alumnos:
+    alumno["programa de estudios"] = "enfermería"
+
+# Actualizar la edad del segundo registro a 50 años
+if len(alumnos) > 1:
+    alumnos[1]["edad"] = 50
+
+# Imprimir la lista de alumnos actualizada
+for alumno in alumnos:
+    print(alumno)
