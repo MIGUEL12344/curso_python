@@ -1,0 +1,2 @@
+#datos
+estudiante:str="hola"
