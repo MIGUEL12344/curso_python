@@ -44,4 +44,4 @@ Los módulos integrados proporcionan funcionalidades básicas esenciales para ta
 Los módulos definidos por el usuario permiten a los desarrolladores organizar y reutilizar su propio código de manera efectiva, mejorando la modularidad y mantenibilidad del proyecto.
 Los módulos de terceros extienden las capacidades de Python al proporcionar funcionalidades especializadas y optimizadas para diversas aplicaciones como análisis de datos, visualización, redes, etc.
 # datos importantes
-cualquier archivo que se cree se llam archivo de script y el codigo dentro de ello es un script
+cualquier archivo que se cree se llama archivo de script y el codigo dentro de ello es un script
