@@ -7,4 +7,5 @@
 1. source .venv /Scripts/activate
 ## para desactivar
 1. deactivate
-2. 
+## pasos para ignorar una carpeta
+1. entornos_virtuales/.venv
