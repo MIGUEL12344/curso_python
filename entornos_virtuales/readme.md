@@ -7,3 +7,4 @@
 1. source .venv /Scripts/activate
 ## para desactivar
 1. deactivate
+2. 
