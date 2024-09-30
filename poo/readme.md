@@ -26,3 +26,13 @@ En el proceso de diseño de una clase a que tener en cuenta `el principio de res
 > [!TIP]
 
 > * Un paradigma de programacion es un metodo, tecnica o estilo de programar. muchos de los lenguajes de programcion son creados en base a un paradigma, ejemplo java es un lenguaje que adopta el paradigma `poo`(programacion orientada a objetos). sin embargo existen lenguajes de programacion que adoptan varios paradigmas como es el caso de python y javascript estos son lenguajes multiparadigmas.
+
+> UML (legunguaje unificado de modelado) #leguaje visual
+
+las clases son representados por rectangulos verticales
+
+los objetos ´pueden ser cosas visibles, tambien pueden ser logicas como una transaccion economica
+1.parte uno --->(nombre del objeto)   
+2.parte dos --->(atributos= variables _caracteristicas)   
+3.parte tres -->(metodos =funciones _accionnnnes )   
+los onbjetos pueden ser cosas fisicas y logicas
