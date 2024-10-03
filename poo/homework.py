@@ -76,7 +76,7 @@ class Pasajero:
                 f"Estado del viaje: {'Confirmado' if self.viaje_confirmado else 'Cancelado'}")
 
 # Ejemplo de uso
-pasajero = Pasajero("Juan", "Pérez", "12345678A", "12A", "2024-10-15")
+pasajero = Pasajero("Juan", "Pérez",12345678, "12A", "2024-10-15")
 print(pasajero.ingresar_origen("galeras"))
 print(pasajero.ingresar_destino("nazca"))
 print(pasajero.estado_pasaje())
