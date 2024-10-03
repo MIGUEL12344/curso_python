@@ -36,3 +36,12 @@ los objetos ´pueden ser cosas visibles, tambien pueden ser logicas como una tra
 2.parte dos --->(atributos= variables _caracteristicas)   
 3.parte tres -->(metodos =funciones _accionnnnes )   
 los onbjetos pueden ser cosas fisicas y logicas
+
+*constructor-- funcion inicializadora = def __init__ (self,nombre,etc):
+amount-- monto
+acount-- cuenta
+
+modularizar -- ponerlo a una carpeta separada para tenerlo mas ordenado
+
+
+

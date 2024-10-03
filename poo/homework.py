@@ -37,7 +37,6 @@ print(cliente_1.estado_cuenta())
 # sus atributos seran nombres y apellidos del pasajero dni numero de asiento fecha de viaje 
 # sus metodos seran ingresar origen, ingresar destino, cancelar viaje, ver estado de pasaje
 
-
 class Pasajero:
     def __init__(self, nombre, apellido, dni, numero_asiento, fecha_viaje, origen="", destino=""):
         self.nombre = nombre
